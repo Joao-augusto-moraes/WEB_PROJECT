@@ -1,0 +1,285 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+    background-color: #262626;
+}
+
+.container{
+    max-width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header{
+    background-image: linear-gradient(360deg, #262626, black);
+    width: 100%;
+    padding: 10px;
+}
+
+.logo{
+    width: 25%;
+    cursor: pointer;
+}
+
+.logo img{
+    width: 57px;
+    border-radius: 8px;
+}
+
+.menu{
+    width: 50%;
+}
+
+.menu nav a{
+    color: white;
+    text-decoration: none;
+    padding-right: 30px;
+    font-size: 18px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu nav a::after{
+    content: " ";
+    width: 0px;
+    height: 4px;
+    background-image: linear-gradient(45deg, black, #262626, #74BF04);
+    top: 25px;
+    left: 0;
+    position: absolute;
+    transition: width 0.5s;
+}
+
+.menu nav a:hover::after{
+    width: 44px;
+}
+
+
+.slider{
+    margin: 0 auto;
+    margin-top: 80px;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.slides{
+    width: 400%;
+    height: 400px;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 25%;
+    position: relative;
+    transition: 1.5s;
+}
+
+.slide img{
+    width: 800px;
+}
+
+.manual-navigation{
+    width: 800px;
+    position: absolute;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 2px solid lightcyan;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 32px;
+}
+
+.manual-btn:hover{
+    background-color: lightcyan;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -50%;
+}
+
+#radio4:checked ~ .first{
+    margin-left: -75%; 
+}
+
+.navigation div{
+    border: 2px solid #05AFF2;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.navigation{
+    position: absolute;
+    width: 800px;
+    margin-top: 360px;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation div:not(:last-child){
+    margin-right: 32px;
+}
+
+#radio1:checked ~.navigation .btn1{
+    background-color: lightcyan;
+}
+
+#radio2:checked ~.navigation .btn2{
+    background-color: lightcyan;
+}
+
+#radio3:checked ~.navigation .btn3{
+    background-color: lightcyan;
+}
+
+#radio4:checked ~.navigation .btn4{
+    background-color: lightcyan;
+}
+
+.escrita {
+    margin-left: 10%;
+    margin-top: 80px;
+}
+
+.cabecalho{
+    color: lightcyan;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.paragrafo{
+    color: lightcyan;
+    margin-top: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22px;
+    width: 88%;
+    padding-bottom: 45px;
+}
+
+.imagem_cabecalho{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7%;
+}
+
+.imagem img{
+    width: 850px;
+    height: 400px;
+    border-radius: 10px;
+}
+
+.box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: lightcyan;
+    border-radius: 8px;
+    width: 20%;
+}
+
+.inputbox{
+    margin-left: 10px;
+    position: relative;
+}
+
+.inputuser{
+    background: none;
+    border: none;
+    border-bottom: 1px solid lightcyan;
+    outline: none;
+    color: lightcyan;
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 2px;
+}
+
+.labelinput{
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.inputuser:focus ~ .labelinput,
+.inputuser:valid ~ .labelinput{
+    top: -20px;
+    font-size: 13px;
+    color: springgreen;
+}
+
+fieldset{
+    border: 3px solid forestgreen;
+    border-radius: 5px;
+}
+
+legend{
+    border: 3px solid forestgreen;
+    border-radius: 4px;
+    padding: 5px;
+    text-align: center;
+    background-color: forestgreen;
+}
+
+#data{
+    margin-left: 10px;
+}
+
+#data_nascimento{
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 15px;
+}
+
+#submit{
+    color: lightcyan;
+    background-color: forestgreen;
+    width: 94%;
+    border: none;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#submit:hover{
+    background-color: darkolivegreen;
+    transition: 0.5s;
+}

@@ -4,14 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nature Technologies</title>
+    <title>Nature Technologies | Formulário</title>
     <link rel="stylesheet" href="/CSS/STYLES.CSS">
     <link rel="icon" type="image/x-icon" href="/Figuras/baixados.jpg">
 </head>
 
 <body>
-
-    <script src="/JAVASCRIPT/SCRIPT.JS"> </script>
 
     <header> <!--inicio do header do site, com a parte de navegação -->
 
@@ -28,49 +26,50 @@
         </div>
 
     </header> <!-- fim do header-->
-
     <div class="box">
-        <form action="">
+        <form action="" id="form">
             <fieldset>
                 <legend> <b>Formulário Da Revista</b> </legend>
                 <br>
 
                 <div class="inputbox">
-                    <input type="text" name="nome" id="nome" class="inputuser" required>
+                    <input type="text" name="nome" id="nome" class="inputuser" required oninput="nameValidate()">
+                    <span class="span_required">O Nome deve ter no mínimo 3 Letras</span>
                     <label for="nome" class="labelinput">Nome Completo</label>
                 </div>
                 <br><br>
 
                 <div class="inputbox">
-                    <input type="text" name="email" id="email" class="inputuser" required>
+                    <input type="email" name="email" id="email" class="inputuser" required oninput="emailValidate()">
+                    <span class="span_required">Digite um E-mail Válido</span>
                     <label for="email" class="labelinput">E-mail</label>
                 </div>
                 <br><br>
 
                 <div class="inputbox">
-                    <input type="tel" name="telefone" id="telefone" class="inputuser" required>
+                    <input type="tel" name="telefone" id="telefone" class="inputuser" required oninput="telefoneValidate()">
+                    <span class="span_required">O telefone deve ter no mínimo 8 caracteres</span>
                     <label for="telefone" class="labelinput">Telefone</label>
                 </div>
                 <br><br>
 
-                    <label for="data_nascimento" id="data"> <b>Data De Nascimento:</b> </label>
-                    <input type="date" name="data_nascimento" id="data_nascimento" required>
-                <br><br>
-
                 <div class="inputbox">
-                    <input type="text" name="cidade" id="cidade" class="inputuser" required>
+                    <input type="text" name="cidade" id="cidade" class="inputuser" required oninput="cidadeValidate()">
+                    <span class="span_required">Digite um nome válido</span>
                     <label for="cidade" class="labelinput">Cidade</label>
                 </div>
                 <br><br>
 
                 <div class="inputbox">
-                    <input type="text" name="estado" id="estado" class="inputuser" required>
+                    <input type="text" name="estado" id="estado" class="inputuser" required oninput="estadoValidate()">
+                    <span class="span_required">Digite um nome válido</span>
                     <label for="estado" class="labelinput">Estado</label>
                 </div>
                 <br><br>
 
                 <div class="inputbox">
-                    <input type="text" name="endereco" id="endereco" class="inputuser" required>
+                    <input type="text" name="endereco" id="endereco" class="inputuser" required oninput="enderecoValidate()">
+                    <span class="span_required">Digite somente o nome e o número da rua</span>
                     <label for="endereco" class="labelinput">Endereço</label>
                 </div>
                 <br><br>
@@ -78,4 +77,7 @@
             </fieldset>
         </form>
     </div>
+
+    <script src="/JAVASCRIPT/SCRIPT.JS"></script>
+
 </body>

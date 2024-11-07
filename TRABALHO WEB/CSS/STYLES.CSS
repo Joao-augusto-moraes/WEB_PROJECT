@@ -255,18 +255,6 @@ legend{
     background-color: forestgreen;
 }
 
-#data{
-    margin-left: 10px;
-}
-
-#data_nascimento{
-    border: none;
-    padding: 10px;
-    border-radius: 10px;
-    outline: none;
-    font-size: 15px;
-}
-
 #submit{
     color: lightcyan;
     background-color: forestgreen;
@@ -282,4 +270,11 @@ legend{
 #submit:hover{
     background-color: darkolivegreen;
     transition: 0.5s;
+}
+
+.span_required{
+    margin-top: 6px;
+    color: red;
+    font-size: 13.5px;
+    display: none;
 }

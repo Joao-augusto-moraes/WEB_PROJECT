@@ -1,0 +1,159 @@
+body {
+    background-color: #1C1C1C;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar {
+    background-color: #2E8B57 !important;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    justify-content: center;
+}
+
+.navbar .navbar-nav {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar .nav-item {
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: white !important;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+
+.navbar a:hover {
+    color: #C7FFD8 !important;
+    text-decoration: none;
+}
+
+.hero-section {
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)
+    ), url('https://images.unsplash.com/photo-1517430816045-df4b7de411aa?fit=crop&w=1200&q=80');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+    text-align: center;
+    color: white;
+}
+
+.hero-section h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3.5rem;
+    animation: fadeInDown 1.5s ease-in-out;
+}
+
+.hero-section p {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero-section .btn {
+    margin-top: 30px;
+    animation: fadeInUp 2.5s ease-in-out;
+}
+
+.btn {
+    background-color: #2E8B57 !important;
+    color: white !important;
+    border: none !important;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #256E48 !important;
+    transform: scale(1.05);
+}
+
+.btn:disabled {
+    background-color: #4B4B4B !important;
+    color: #BFBFBF !important;
+    cursor: not-allowed;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card .card-title {
+    color: #2E8B57;
+    font-family: 'Poppins', sans-serif;
+}
+
+footer {
+    background-color: #1C1C1C;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer a {
+    color: #C7FFD8;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.table {
+    background-color: #1C1C1C !important;
+    color: white !important;
+    border: 1px solid #2E8B57 !important;
+}
+
+.table thead {
+    background-color: #2E8B57 !important;
+    color: white !important;
+}
+
+.table tbody tr:hover {
+    background-color: #256E48 !important;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
